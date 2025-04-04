@@ -31,7 +31,7 @@ ul{
     gap: 30px;
     list-style: none;
     color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
     font-size: 18px;
     
@@ -39,6 +39,7 @@ ul{
 ul > li > a{
     color: white;
     text-decoration: none;
+  
 }
 .guia{
     padding: 20px;
