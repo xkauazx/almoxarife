@@ -18,27 +18,37 @@ body{
    
 }
 #mainindex > h1{
-    color: white;
+    color: rgb(252, 252, 252);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
     font-family: 'Montserrat', sans-serif;
     
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    background-color: rgba(0, 132, 255, 0.144);
 }
 
 
 ul{
-    padding: 5px;
+    padding: px;
     display: flex;
-    gap: 30px;
+    gap: 10px;
     list-style: none;
-    color: white;
-    font-family: 'Montserrat', sans-serif;
-    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
-    font-size: 18px;
+   
+    
+    text-shadow: 3px 3px 3px rgba(17, 0, 0, 0.897);
+    font-size: 25px;
     
 }
+
 ul > li > a{
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
+    font-family: 'Teko', sans-serif;
+
+
   
 }
 .guia{
