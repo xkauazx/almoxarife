@@ -162,7 +162,6 @@ input::placeholder{
     text-align: center;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
-    
     width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(204, 204, 204, 0.3); 
@@ -217,6 +216,7 @@ main {
 .localizacao > h2{
     margin: 10px 0px 20px 0px;
     color: #ffffff;
+    font-size: 20px;
 }
 .localizacao > p{
     color: #bebebe;
