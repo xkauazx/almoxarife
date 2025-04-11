@@ -135,7 +135,7 @@ input::placeholder{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    background-color: #141b354b;
+    
     display: none;
     gap: 10px;
     
@@ -162,7 +162,7 @@ input::placeholder{
     text-align: center;
     border-bottom: 1px solid #ccc;
     cursor: pointer;
-    background-color: rgba(255, 255, 255, 0);
+    
     width: 100%;
     box-sizing: border-box;
     border-bottom: 1px solid rgba(204, 204, 204, 0.3); 
