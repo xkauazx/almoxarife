@@ -32,7 +32,6 @@ nav{
 
  ul{
     display: flex;
-    gap: 10px;
     list-style: none;
     text-shadow: 3px 3px 3px rgba(17, 0, 0, 0.897);
     font-size: 25px;
@@ -47,6 +46,12 @@ ul > li > a{
 
   
 }
+#mainindex > ul{
+    font-size: 20px;
+    margin-top: 10px;
+    
+    
+}
 #container{
     display: flex;
     flex-direction: row;
@@ -59,15 +64,8 @@ ul > li > a{
     padding: 20px;
 }
 
-input[type="text"]{
-    height: 35px;
-    border-radius: 13px;
-    border: none;
-    background-color: rgb(175, 175, 175);
-    padding: 5px;
-    width: 80%;
 
-}
+
 input::placeholder{
     color: #797979;
     padding: 5px;
@@ -121,8 +119,6 @@ input::placeholder{
 #resultList {
     width: 90%;
     max-width: 400px;
-    margin: 0 auto;
-    
     border-radius: 0 0 10px 10px;
     list-style: none;
     padding: 20px;
@@ -130,7 +126,7 @@ input::placeholder{
     overflow-y: auto; 
     overflow-x: hidden; 
     position: absolute;
-    top: 32%;
+    top: 31%;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -139,6 +135,10 @@ input::placeholder{
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
+    background-color: #141b354b;
+    display: none;
+    gap: 10px;
+    
 
     
 }
@@ -165,25 +165,73 @@ input::placeholder{
     background-color: rgba(255, 255, 255, 0);
     width: 100%;
     box-sizing: border-box;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3); 
+    transition: background-color 0.5s ease;
+    
 }
 
 #resultList li:hover {
-    background-color: #eee;
+    background-color: #252b41fa;
+    
+}
+#resultList.show {
+    display: block;
+}
+.search-container{
+    width: 100%;
+   
 }
 #searchBar {
     width: 90%;
     max-width: 400px;
-    padding: 10px;
+    padding: 22px;
     font-size: 1.2em;
-    border-radius: 10px;
     margin: 0 auto;
     display: block;
     position: relative;
     z-index: 2;
+    height: 35px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    width: 80%;
+    outline: none;
+    border: 1px solid #1c2641; 
+    
+    
 }
 
-/* Garante que o contêiner tenha position: relative */
+
 main {
     position: relative;
     padding-top: 60px;
 }
+.localizacao{
+   
+    border-radius: 10px;
+    
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+   
+}
+.localizacao > h2{
+    margin: 10px 0px 20px 0px;
+    color: #ffffff;
+}
+.localizacao > p{
+    color: #bebebe;
+}
+.localizacao {
+    animation: aparecer 1s ease-in-out;
+  }
+  
+  @keyframes aparecer {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
