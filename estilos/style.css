@@ -127,7 +127,7 @@ input::placeholder{
     overflow-x: hidden; 
     position: absolute;
     top: 31%;
-    left: 50%;
+    left: 49.9%;
     transform: translateX(-50%);
     z-index: 1;
     display: flex;
