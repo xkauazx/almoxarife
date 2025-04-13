@@ -144,12 +144,13 @@ input::placeholder{
     
 }
 #resultList::-webkit-scrollbar {
-    width: 8px; /* ou altura se for horizontal */
+    
+    width: 3px; /* ou altura se for horizontal */
     background: transparent; /* deixa o fundo da barra invisível */
 }
 
 #resultList::-webkit-scrollbar-thumb {
-    background-color: rgba(255, 255, 255, 0.3); /* cor da “alça” da barra com transparência */
+    background-color: rgba(240, 240, 240, 0.87); /* cor da “alça” da barra com transparência */
     border-radius: 10px;
 }
 
@@ -157,7 +158,7 @@ input::placeholder{
     background: transparent; /* deixa o trilho invisível */
 }
 #resultList li {
-    padding: 10px;
+    padding: 15px;
     font-family: 'Teko', sans-serif;
     font-size: 1.2em;
     text-align: center;
@@ -182,7 +183,7 @@ input::placeholder{
    
 }
 #searchBar {
-    width: 90%;
+    width: 100%;
     max-width: 400px;
     padding: 22px;
     font-size: 1.2em;

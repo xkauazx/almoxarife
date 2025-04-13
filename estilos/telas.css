@@ -1,0 +1,13 @@
+@charset "UTF-8";
+@media screen and (max-width: 500px) {
+    body{
+    
+    }
+    #resultList{
+        max-width: 390px;
+    }
+    #resultList::-webkit-scrollbar-thumb {
+        background-color: rgba(240, 240, 240, 0.87); /* cor da “alça” da barra com transparência */
+        border-radius: 10px;
+    }
+}
