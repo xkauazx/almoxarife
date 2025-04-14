@@ -12,18 +12,75 @@ body{
 #mainindex{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#titleindex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    line-height: 30px;
+}
+#titleindex > h1{
+    margin: 50px 0px 0px 0px;
+    color: rgb(252, 252, 252);
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.897);
+    font-family: 'teko', sans-serif;
+    font-size: 50px;
+   
+}
+#titleindex > h2{
+    margin: 0px 0px 50px 0px;
+    color: #326094;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.897);
+    font-family: 'teko', sans-serif;
+    
+}
+#mainindex >  div > a  {
+text-decoration: none;
+}
+#mainindex >  div > a > input {
+    color: #050505;
+    text-shadow: 1px 1px 1px rgb(85, 85, 85);
+    font-family: 'teko', sans-serif;
+    margin: 20px 0px 20px 0px;
+    background-color: #326094; /* azul mais vibrante */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    cursor: pointer;
+    transition: 0.8s;
+    width: 230px;
+
+}
+#mainindex >  div > a > input:hover{
+    background-color: #357ABD;
+    
+}
+#mainlocalizar{
+    display: flex;
+    flex-direction: column;
     height: 100vh;
     margin-top: 100px;
     align-items: center;
     gap: 80px;
    
 }
-#mainindex > h1{
+#mainlocalizar > h1{
     color: rgb(252, 252, 252);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
     font-family: 'Montserrat', sans-serif;
     
 }
+
 nav{
    
     
@@ -47,7 +104,7 @@ ul > li > a{
 
   
 }
-#mainindex > ul{
+#mainlocalizar > ul{
     font-size: 20px;
     margin-top: 10px;
     
@@ -180,6 +237,8 @@ input::placeholder{
 }
 .search-container{
     width: 100%;
+    position: relative;
+    display: inline-block;
    
 }
 #searchBar {
@@ -191,7 +250,7 @@ input::placeholder{
     display: block;
     position: relative;
     z-index: 2;
-    height: 35px;
+    height: 40px;
     border-radius: 10px 10px 10px 10px;
     border: none;
     background-color: rgb(175, 175, 175);
@@ -237,3 +296,6 @@ main {
       transform: translateY(0);
     }
   }
+#mainrequisitar{
+
+}
