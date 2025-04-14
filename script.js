@@ -23,7 +23,7 @@ const pecas = [
   { nome: "Cotovelo 90° PEX Multicamada 16x16", local: "  1º Tenda > 2º Prateleira > 3º Coluna > 3º Fileira " },
   { nome: "Distribuidor Aberto com Rosca Pex 3/4, 4 saidas ", local: "  1º Tenda > 2º Prateleira > 3º Coluna > 3º Fileira " },
   { nome: "Tê de Redução de PVC PBA 100/75 x de 100/ 85mm", local: "  ?º Tenda > ?º Prateleira > ?º Coluna > ?º Fileira " },
-    { nome: " ", local: "  ?º Tenda > ?º Prateleira > ?º Coluna > ?º Fileira " },
+    { nome: " KIT", local: " 4 caixa de piso, 7 caixa de azulejo 25x35,  20 saco de argamassa, 100m de taro " },
     { nome: " ", local: "  ?º Tenda > ?º Prateleira > ?º Coluna > ?º Fileira " },
     { nome: " ", local: "  ?º Tenda > ?º Prateleira > ?º Coluna > ?º Fileira " },
     { nome: " ", local: "  ?º Tenda > ?º Prateleira > ?º Coluna > ?º Fileira " },
