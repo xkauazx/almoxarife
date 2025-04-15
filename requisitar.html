@@ -1,44 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Almoxarifado</title>
-    <link rel="stylesheet" href="estilos/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="estilos/telas.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Concert+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Racing+Sans+One&family=Rubik+Spray+Paint&family=Teko:wght@300..700&display=swap" rel="stylesheet">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>Almoxarifado</title>
+  <link rel="stylesheet" href="estilos/style.css" />
+  <link rel="stylesheet" href="estilos/telas.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet" />
 </head>
 <body>
-    <header>
-      
-        <nav>
-            <div id="container">
-                <ul>
-                    <li ><img src="img/ChatGPT Image 4 de abr. de 2025, 16_14_10.png" alt="Logo da Eempresa"   ></li>
-            
-                </ul>
-                <ul >
-                    <li class="guia">
-                        <a href="./index.html">INICIO</a>
-                    </li>
-                    <li class="guia">
-                        <a href="./duvida.html">DUVIDA?</a>
-                    </li>
-                 </ul>
-            </div>
-       
+  <header>
+    <nav>
+      <div id="container">
+        <ul>
+          <li><img src="img/ChatGPT Image 4 de abr. de 2025, 16_14_10.png" alt="Logo da Empresa" /></li>
+        </ul>
+        <ul>
+          <li class="guia"><a href="./index.html">INICIO</a></li>
+          <li class="guia"><a href="./requisitar.html">REQUISITAR</a></li>
+          <li class="guia"><a href="./duvida.html">DUVIDA?</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
-    <main id="mainrequisitar">
-    
-        
-    </main>
-    
-    
-    
+  </header>
 
-    <script src="script.js"></script>
+  <main id="mainrequisitar">
+    <form id="requisicaoForm">
+      <div class="divinfo">
+          <label for="encarregado">Encarregado:</label>
+          <input type="text" id="encarregado" placeholder="Nome do encarregado" required />
+      </div>
+
+      <div class="divinfo">
+          <label for="obra">Obra:</label>
+          <input type="text" id="obra" placeholder="Nome da obra" required />
+      </div>
+
+      <div class="divkits">
+          <label style="font-size: 20px; color: white; margin: 10px 10px 0px 0px;" >Kits:</label>
+          <div class="dropdown">
+            <div style="margin: 10px 0px 0px 0px;" class="dropdown-btn" id="dropdownBtn">Selecione os kits</div>
+            <div class="dropdown-content" id="dropdownContent" style="display: none;">
+              <label><input type="checkbox" value="Kit Elétrico" /> Kit Elétrico</label>
+              <label><input type="checkbox" value="Kit Hidráulico" /> Kit Hidráulico</label>
+              <label><input type="checkbox" value="Kit de Segurança" /> Kit de Segurança</label>
+              <label><input type="checkbox" value="Kit Ferramentas" /> Kit Ferramentas</label>
+              <label><input type="checkbox" value="kaua" /> kaua</label>
+            </div>
+            <div class="selected-values" id="selectedKitsDisplay">Nenhum kit selecionado</div>
+          </div>
+      </div>
+
+      <label style="color: white; font-size: 20px;" for="adicional">Adicionais:</label>
+      <textarea style="width: 245px;" id="adicional" rows="4" placeholder="Descreva os materiais adicionais"></textarea>
+
+      <button style="width: 140px;" type="submit">Enviar Requisição</button>
+      <div class="message-preview" id="preview"></div>
+    </form>
+  </main>
+  <script src="requisicao.js"></script>
+</body>
 </html>
