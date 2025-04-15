@@ -165,7 +165,11 @@ form.addEventListener('submit', (e) => {
   const kits = Array.from(dropdownContent.querySelectorAll('input:checked'))
                     .map(input => input.value);
 
-  const mensagem = `📦 NOVA REQUISIÇÃO`;
+  const mensagem = ` REQUISIÇÃO\n\n` + 
+                `👷 Encarregado: ${encarregado}\n` +
+                `🏗️ Obra: ${obra}\n` +
+                `🧰 Kits: ${kits.join(', ') || 'Nenhum'}\n` +
+                ` Adicionais: ${adicionais || 'Nenhum'}`;
 
   preview.textContent = mensagem;
   const phoneNumber = "5561996896166"; 
