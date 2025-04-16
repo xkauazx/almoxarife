@@ -1,9 +1,9 @@
 // Base de dados fictícia (pode ser alimentada dinamicamente no futuro)
 const pecas = [
-  { nome: "Luva Simples 100mm", local: " 1º Tenda > 1º Prateleira > 1º Coluna > 3º Fileira" },
+  { nome: "Luva Simples 100mm de PVC Série Normal", local: " 1º Tenda > 1º Prateleira > 1º Coluna > 3º Fileira" },
   { nome: "Calça Amarela GG", local: "2º Tenda > 8º Prateleira > 3º Coluna > 1º Fileira" },
-  { nome: "Joelho 45º 50mm ", local: "1º Tenda > 1º Prateleira > 1º Coluna > 2º Fileira" },
-  { nome: "Junção Simples 100x100 ", local: "  1º Tenda > 1º Prateleira > 1/2º Coluna > 2º Fileira " },
+  { nome: "Joelho 45º 50mm de PVC Série Normal - Esgoto", local: "1º Tenda > 1º Prateleira > 1º Coluna > 2º Fileira" },
+  { nome: "Junção Simples 100x100 ", local: "  1º Tenda > 1º Prateleira > 1|2º Coluna > 2º Fileira " },
   { nome: "Junção Simples 40x40 ", local: "  1º Tenda > 1º Prateleira > 2º Coluna > 3º Fileira " },
   { nome: "Bucha de Redução  50x40 ", local: "  1º Tenda > 1º Prateleira > 2º Coluna > 1º Fileira " },
   { nome: "Luva Simples 50mm ", local: "  1º Tenda > 1º Prateleira > 3º Coluna > 1/2º Fileira " },
