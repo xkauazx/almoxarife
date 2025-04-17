@@ -254,7 +254,7 @@ main {
 }
 .divinfo{
     display: flex;
-    
+    margin-top: 20px;
   
     flex-direction: column;
     width: 70%;
