@@ -129,7 +129,7 @@ input::placeholder{
     overflow-y: auto; 
     overflow-x: hidden; 
     position: absolute;
-    top: 31%;
+    top: 49%;
     left: 49.9%;
     transform: translateX(-50%);
     z-index: 1;
@@ -257,26 +257,26 @@ main {
     
   
     flex-direction: column;
-    width: 50%;
+    width: 70%;
 }
 .divkits{
     display: flex;
     flex-direction: row;
-    width: 50%;
+    width: 70%;
    
 }
 .divinfo > label{
     color: #ffffff;
-    font-size: 20px;
-    background-color: ;
+    font-size: 25px;
+    
   
 }
 .divinfo > input{
     color: #000000;
-  height: 30px;
+  height: 40px;
   border-radius: 12px;
   border: none;
-    padding: 5px;
+padding: 5px;
   border: none;
   background-color: rgb(175, 175, 175);
   outline: none;
@@ -288,24 +288,44 @@ main {
 input::placeholder{
     font-size: 13px;
 }
+#idadd{
+    display: flex;
+    flex-direction: column;
+  
+    gap: 2px;
+    text-align: left;
+    width: 70%;
+}
+#idadd > textarea{
+    padding: 5px;
+    border-radius: 10px 10px 10px 10px;
+    border: none;
+    background-color: rgb(175, 175, 175);
+}
 .dropdown {
     position: relative;
     display:flex;
     flex-direction: column;
-    align-items: center;
     width: 70%;
     
     
   }
 
   .dropdown-btn {
-    width: 100%;
+    width: 60%;
     padding: 2px;
     background-color: #eee;
     border: 1px solid #ccc;
     cursor: pointer;
     text-align: center;
+    border-radius: 8px;
+    
   }
+  .dropdown-btn:hover{
+    background-color: #acacacfa;
+    transition: 0.5s;
+  }
+ 
 
   .dropdown-content {
     display: none;
@@ -316,16 +336,32 @@ input::placeholder{
     z-index: 10;
     max-height: 200px;
     overflow-y: auto;
+    border-radius: 10px;
   }
 
   .dropdown-content label {
     display: block;
     padding: 8px;
     cursor: pointer;
+   
   }
 
   .dropdown-content label:hover {
     background-color: #f0f0f0;
+    
+  }
+  #buttonenviar{
+    height: 35px;
+    border-radius: 10px;
+    font-size: 18px;
+    border: none;
+    border-bottom: #1A2343;
+    font-family: 'Teko', sans-serif;
+  }
+  #buttonenviar:hover{
+    background-color: #acacacfa;
+    cursor: pointer;
+    transition: 0.5s;
   }
 
   .selected-values {

@@ -55,16 +55,19 @@ function mostrarDetalhesKit(nomeKit) {
     overlay.style.left = '0';
     overlay.style.width = '100%';
     overlay.style.height = '100%';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.7)';
+    overlay.style.backgroundColor = 'rgba(0, 0, 0, 0.7)';
+    overlay.style.borderRadius = '8px';
     overlay.style.zIndex = '1000';
     overlay.style.display = 'flex';
     overlay.style.justifyContent = 'center';
     overlay.style.alignItems = 'center';
   
+  
     // Criar modal
     const modal = document.createElement('div');
     modal.style.backgroundColor = 'white';
     modal.style.padding = '20px';
+    modal.style.textShadow = 'none';
     modal.style.borderRadius = '8px';
     modal.style.width = '80%';
     modal.style.maxWidth = '500px';
@@ -75,22 +78,35 @@ function mostrarDetalhesKit(nomeKit) {
     // Adicionando display flex e column ao conteúdo do modal
     modal.style.display = 'flex';
     modal.style.flexDirection = 'column';
+     
   
     // Conteúdo do modal com estrutura flex column
     modal.innerHTML = `
       <div style="
         display: flex;
         flex-direction: column;
-        gap: 10px;
+        gap: 7px;
         position: relative;
+        color: black;
+      
+        
       ">
-        <h3 style="margin: 0; color: #333;">Composição do ${nomeKit}</h3>
+      
+    
+        <h3 style="margin: 0; color: #black; font-size: 30px; font-family: teko;">Composição do ${nomeKit}</h3>
         <ul style="
+          color:gray/
           display: flex;
           flex-direction: column;
-          gap: 8px;
+          gap: 4px;
           padding-left: 20px;
           margin: 0;
+           text-shadow: none;
+          font-size: 25px;
+          font-family: teko;
+          
+           
+          
         ">
           ${itens.map(item => `<li>${item}</li>`).join('')}
         </ul>
@@ -103,6 +119,7 @@ function mostrarDetalhesKit(nomeKit) {
           font-size: 20px;
           cursor: pointer;
           color: #666;
+          
         ">×</button>
       </div>
     `;

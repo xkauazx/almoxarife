@@ -18,7 +18,7 @@
         <ul>
           <li class="guia"><a href="./index.html">INICIO</a></li>
           <li class="guia"><a href="./requisitar.html">REQUISITAR</a></li>
-          <li class="guia"><a href="./duvida.html">DUVIDA?</a></li>
+          <li class="guia"><a href="./duvida.html">DUVIDA</a></li>
         </ul>
       </div>
     </nav>
@@ -51,10 +51,12 @@
           </div>
       </div>
 
-      <label style="color: white; font-size: 20px;" for="adicional">Adicionais:</label>
-      <textarea style="width: 245px;" id="adicional" rows="4" placeholder="Descreva os materiais adicionais"></textarea>
+      <div id="idadd">
+        <label  style=" color: white; font-size: 25px;" for="adicional ">Adicionais:</label>
+        <textarea style="width: 100%;   outline: none; height: 100px; border-radius: 10px;" id="adicional" rows="4" placeholder="Descreva os materiais adicionais"></textarea>
+      </div>
 
-      <button style="width: 140px;" type="submit">Enviar Requisição</button>
+      <button id="buttonenviar" style="width: 140px;" type="submit">Enviar Requisição</button>
       <div class="message-preview" id="preview"></div>
     </form>
   </main>
