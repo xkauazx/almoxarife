@@ -1,116 +1,130 @@
-*{
+* {
     margin: 0;
     box-sizing: border-box;
     padding: 0;
 }
-body{
-    background-color: #1A2343;
+
+body {
+    background: linear-gradient(to bottom, #1A2343, #000000);
     overflow: hidden;
-    
+    height: 100vh;
+
 }
 
-#mainlocalizar{
+#mainlocalizar {
     display: flex;
     flex-direction: column;
     height: 100vh;
     margin-top: 100px;
     align-items: center;
     gap: 80px;
-   
+
 }
-#mainlocalizar > h1{
+
+#mainlocalizar>h1 {
     color: rgb(252, 252, 252);
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
     font-family: 'TEKO', sans-serif;
     font-size: 50px;
-    
+
 }
 
-nav{
-   
-    
-    background-color: rgba(0, 132, 255, 0.144);
+nav {
+
+
+    background-color: rgba(0, 0, 0, 0.349);
 }
 
 
- ul{
+ul {
     display: flex;
     list-style: none;
     text-shadow: 3px 3px 3px rgba(17, 0, 0, 0.897);
     font-size: 25px;
-    
+
 }
 
-ul > li > a{
+ul>li>a {
     color: rgb(255, 255, 255);
     text-decoration: none;
     font-family: 'Teko', sans-serif;
 
 
-  
+
 }
-#mainlocalizar > ul{
+
+#mainlocalizar>ul {
     font-size: 20px;
     margin-top: 10px;
-    
-    
+
+
 }
-#container{
+
+#container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    
+
 }
-.guia{
+
+.guia {
     padding: 20px;
 }
 
 
 
-input::placeholder{
+input::placeholder {
     color: #797979;
     padding: 5px;
 
 }
-#mainduvida{
+
+#mainduvida {
     padding: 15px;
     margin-top: 10px;
 }
-#mainduvida > h1{
+
+#mainduvida>h1 {
     color: white;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     margin: 0px 0px 10px 0px;
-    
+
 }
 
-#sec1{
-    
+#sec1 {
+
     padding: 5px;
 }
-#sec1 > p{
+
+#sec1>p {
     color: rgba(170, 170, 170, 0.993);
     text-shadow: 2px 2px 2px black;
-   
+
 }
-#sec2{
+
+#sec2 {
     padding: 5px;
 }
-#sec2 > h1{
+
+#sec2>h1 {
     color: white;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.897);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    margin: 0px 0px 10px 0px;;
+    margin: 0px 0px 10px 0px;
+    ;
 }
-#sec2 > p{
+
+#sec2>p {
     color: rgba(170, 170, 170, 0.993);
     text-shadow: 2px 2px 2px black;
 }
-#img{
+
+#img {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -119,46 +133,53 @@ input::placeholder{
     color: azure;
     gap: 10px;
 }
+
 #resultList {
     width: 90%;
     max-width: 400px;
     border-radius: 0 0 10px 10px;
     list-style: none;
     padding: 20px;
-    max-height: 220px; 
-    overflow-y: auto; 
-    overflow-x: hidden; 
+    max-height: 220px;
+    overflow-y: auto;
+    overflow-x: hidden;
     position: absolute;
     top: 49%;
     left: 49.9%;
     transform: translateX(-50%);
     z-index: 1;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     color: white;
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
-    
+
     display: none;
     gap: 10px;
-    
 
-    
+
+
 }
+
 #resultList::-webkit-scrollbar {
-    
-    width: 3px; /* ou altura se for horizontal */
-    background: transparent; /* deixa o fundo da barra invisível */
+
+    width: 3px;
+    /* ou altura se for horizontal */
+    background: transparent;
+    /* deixa o fundo da barra invisível */
 }
 
 #resultList::-webkit-scrollbar-thumb {
-    background-color: rgba(240, 240, 240, 0.87); /* cor da “alça” da barra com transparência */
+    background-color: rgba(240, 240, 240, 0.87);
+    /* cor da “alça” da barra com transparência */
     border-radius: 10px;
 }
 
 #resultList::-webkit-scrollbar-track {
-    background: transparent; /* deixa o trilho invisível */
+    background: transparent;
+    /* deixa o trilho invisível */
 }
+
 #resultList li {
     padding: 15px;
     font-family: 'Teko', sans-serif;
@@ -168,24 +189,27 @@ input::placeholder{
     cursor: pointer;
     width: 100%;
     box-sizing: border-box;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.3); 
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3);
     transition: background-color 0.5s ease;
-    
+
 }
 
 #resultList li:hover {
     background-color: #252b41fa;
-    
+
 }
+
 #resultList.show {
     display: block;
 }
-.search-container{
+
+.search-container {
     width: 100%;
     position: relative;
     display: inline-block;
-   
+
 }
+
 #searchBar {
     width: 100%;
     max-width: 400px;
@@ -201,9 +225,9 @@ input::placeholder{
     background-color: rgb(175, 175, 175);
     width: 80%;
     outline: none;
-    border: 1px solid #1c2641; 
-    
-    
+    border: 1px solid #1c2641;
+
+
 }
 
 
@@ -211,107 +235,136 @@ main {
     position: relative;
     padding-top: 60px;
 }
-.localizacao{
-   
+
+.localizacao {
+
     border-radius: 10px;
-    
+
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
-   
+
 }
-.localizacao > h2{
+
+.localizacao>h2 {
     margin: 10px 0px 20px 0px;
     color: #ffffff;
     font-size: 20px;
 }
-.localizacao > p{
+
+.localizacao>p {
     color: #bebebe;
 }
+
 .localizacao {
     animation: aparecer 1s ease-in-out;
-  }
-  
-  @keyframes aparecer {
+}
+
+@keyframes aparecer {
     from {
-      opacity: 0;
-      transform: translateY(-10px);
+        opacity: 0;
+        transform: translateY(-10px);
     }
+
     to {
-      opacity: 1;
-      transform: translateY(0);
+        opacity: 1;
+        transform: translateY(0);
     }
-  }
-#mainrequisitar{
+}
+
+#mainrequisitar {
     font-family: 'Teko', sans-serif;
 }
-#requisicaoForm{
-    
+
+#requisicaoForm {
+
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     justify-content: center
 }
-.divinfo{
+
+.divinfo {
     display: flex;
-    margin-top: 20px;
-  
     flex-direction: column;
     width: 70%;
 }
-.divkits{
+
+.divinfo>select {
+    color: #000000;
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    outline: none;
+    border: 1px solid #1c2641;
+    font-size: 19px;
+    font-family: 'Teko', sans-serif;
+    text-indent: 10px;
+
+}
+
+
+
+.divkits {
     display: flex;
     flex-direction: row;
     width: 70%;
-   
+
 }
-.divinfo > label{
+
+.divinfo>label {
     color: #ffffff;
     font-size: 25px;
-    
-  
+
+
 }
-.divinfo > input{
+
+.divinfo>input {
     color: #000000;
-  height: 40px;
-  border-radius: 12px;
-  border: none;
-padding: 5px;
-  border: none;
-  background-color: rgb(175, 175, 175);
-  outline: none;
-  border: 1px solid #1c2641; 
-  font-size: 17px;
-  
-  
+    height: 40px;
+    border-radius: 12px;
+    border: none;
+    padding: 5px;
+    border: none;
+    background-color: rgb(175, 175, 175);
+    outline: none;
+    border: 1px solid #1c2641;
+    font-size: 17px;
+
+
 }
-input::placeholder{
+
+input::placeholder {
     font-size: 13px;
 }
-#idadd{
+
+#idadd {
     display: flex;
     flex-direction: column;
-  
     gap: 2px;
     text-align: left;
     width: 70%;
 }
-#idadd > textarea{
+
+#idadd>textarea {
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
     border: none;
     background-color: rgb(175, 175, 175);
 }
+
 .dropdown {
     position: relative;
-    display:flex;
+    display: flex;
     flex-direction: column;
     width: 70%;
-    
-    
-  }
 
-  .dropdown-btn {
+
+}
+
+.dropdown-btn {
     width: 60%;
     padding: 2px;
     background-color: #eee;
@@ -319,15 +372,16 @@ input::placeholder{
     cursor: pointer;
     text-align: center;
     border-radius: 8px;
-    
-  }
-  .dropdown-btn:hover{
+
+}
+
+.dropdown-btn:hover {
     background-color: #acacacfa;
     transition: 0.5s;
-  }
- 
+}
 
-  .dropdown-content {
+
+.dropdown-content {
     display: none;
     position: absolute;
     width: 100%;
@@ -337,35 +391,37 @@ input::placeholder{
     max-height: 200px;
     overflow-y: auto;
     border-radius: 10px;
-  }
+}
 
-  .dropdown-content label {
+.dropdown-content label {
     display: block;
     padding: 8px;
     cursor: pointer;
-   
-  }
 
-  .dropdown-content label:hover {
+}
+
+.dropdown-content label:hover {
     background-color: #f0f0f0;
-    
-  }
-  #buttonenviar{
+
+}
+
+#buttonenviar {
     height: 35px;
     border-radius: 10px;
     font-size: 17px;
     border: none;
     border-bottom: #1A2343;
     font-family: 'Teko', sans-serif;
-  }
-  #buttonenviar:hover{
+}
+
+#buttonenviar:hover {
     background-color: #acacacfa;
     cursor: pointer;
     transition: 0.5s;
-  }
+}
 
-  .selected-values {
+.selected-values {
     margin-top: 5px;
     font-size: 14px;
     color: #555;
-  }
+}
